@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".no_verification">
+
+    <TextView
+        android:id="@+id/noactivity_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/heading"
+        android:textAlignment="center"
+        android:textColor="@color/violet"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:hint="@string/otp_hint"
+        android:inputType="number"
+        android:maxLength="4"
+        app:layout_constraintTop_toBottomOf="@id/noactivity_heading"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/otp"
+        android:text="@string/info_3"
+        android:textSize="12sp"
+        android:layout_margin="20dp"
+        android:id="@+id/message_3"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/message_3"
+        android:text="@string/info_4"
+        android:textSize="12sp"
+        android:gravity="center_horizontal"
+        android:id="@+id/message_4"/>
+
+</android.support.constraint.ConstraintLayout>

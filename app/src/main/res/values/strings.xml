@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ROUTIN</string>
+    <string name="phno_hint">ENTER PHONE NUMBER</string>
+    <string name="heading">PHONE NUMBER VERIFICATION</string>
+    <string name="country_code">India(+91)</string>
+    <string name="info">Please enter your phone number, we will send you </string>
+    <string name="ok">ok</string>
+    <string name="info_2">an OTP for verification</string>
+    <string name="info_3">We have sent you an one time message</string>
+    <string name="info_4">Please enter it here</string>
+    <string name="otp_hint">Enter your OTP </string>
+    <string name="male_choice">Male</string>
+    <string name="feamle_choice">Female</string>
+    <string name="username_hint">Name</string>
+    <string name="emailid_hint">Email</string>
+    <string name="referralcode_hint">Referral code</string>
+    <string name="signup_button">Signup</string>
+</resources>
