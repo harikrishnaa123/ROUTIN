@@ -15,4 +15,26 @@
     <string name="emailid_hint">Email</string>
     <string name="referralcode_hint">Referral code</string>
     <string name="signup_button">Signup</string>
+    <string name="city_heading">CITY</string>
+    <array name="spinner1Items">
+        <item>PUDUCHERRY</item>
+    </array>
+    <string name="location_heading">LOCATION</string>
+    <array name="spinner2Items">
+        <item>LAWSPET</item>
+        <item>THAVALAKUPPAM</item>
+        <item>MURUNGAPAKKAM</item>
+        <item>VILLIANUR</item>
+        <item>MOOLAKULAM</item>
+        <item>KADHIRKAMAM</item>
+        <item>OULGARET</item>
+        <item>SARAM</item>
+        <item>MUDALIARPET</item>
+        <item>MUTHIALPET</item>
+        <item>REDDIYARPALAYAM</item>
+        <item>BAHUR</item>
+        <item>DHARMAPURI</item>
+        <item>GORIMEDU</item>
+        <item>MARAPALAM</item>
+    </array>
 </resources>

@@ -5,6 +5,7 @@
     style="Widget.AppCompat.Button.Borderless"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgroumd"
     android:orientation="horizontal"
     tools:context=".MainActivity">
 

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgroumd"
     tools:context=".signup">
 
     <ImageView
@@ -52,7 +53,8 @@
         app:layout_constraintTop_toBottomOf="@id/gender"
         android:hint="@string/username_hint"
         android:layout_margin="15dp"
-        android:inputType="text"/>
+        android:inputType="text"
+       />
 
     <EditText
         android:layout_width="match_parent"
@@ -73,12 +75,11 @@
         android:inputType="number"/>
 
     <Button
+        android:id="@+id/signup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/signup"
-        app:layout_constraintTop_toBottomOf="@id/referralcode"
         android:layout_margin="10dp"
         android:text="@string/signup_button"
-        />
+        app:layout_constraintTop_toBottomOf="@id/referralcode" />
 
 </android.support.constraint.ConstraintLayout>

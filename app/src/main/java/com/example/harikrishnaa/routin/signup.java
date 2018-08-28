@@ -1,5 +1,6 @@
 package com.example.harikrishnaa.routin;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,7 +21,16 @@ public class signup extends AppCompatActivity {
         person_image = findViewById(R.id.person);
         signup_button = findViewById(R.id.signup);
 
-        signup_button.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
+        signup_button.setBackgroundColor(getResources().getColor(R.color.green));
+
+        signup_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent mIntent = new Intent(getApplicationContext(), location.class);
+                startActivity(mIntent);
+                finish();
+            }
+        });
     }
 
     public void onRadioButtonClicked(View view) {
