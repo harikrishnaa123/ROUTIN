@@ -24,7 +24,7 @@ public class no_verification extends AppCompatActivity {
             public void onClick(View view) {
                 Intent mIntent = new Intent(getApplicationContext(), signup.class);
                 startActivity(mIntent);
-                finish();
+
             }
         });
 

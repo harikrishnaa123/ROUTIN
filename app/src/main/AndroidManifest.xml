@@ -19,7 +19,9 @@
         <activity android:name=".no_verification" />
         <activity android:name=".signup" />
         <activity android:name=".location" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".home" />
+        <activity android:name=".datepicker" />
     </application>
 
 </manifest>

@@ -23,12 +23,14 @@ public class signup extends AppCompatActivity {
 
         signup_button.setBackgroundColor(getResources().getColor(R.color.green));
 
+
+
         signup_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent mIntent = new Intent(getApplicationContext(), location.class);
                 startActivity(mIntent);
-                finish();
+
             }
         });
     }
@@ -40,7 +42,7 @@ public class signup extends AppCompatActivity {
         switch(view.getId()) {
             case R.id.male:
                 if (checked)
-                    person_image.setImageResource(R.drawable.male2);
+                    person_image.setImageResource(R.drawable.male);
                     break;
             case R.id.female:
                 if (checked)

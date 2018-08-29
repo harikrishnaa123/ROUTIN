@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent mIntent = new Intent(getApplicationContext(), no_verification.class);
                 startActivity(mIntent);
-                finish();
+
             }
         });
     }

@@ -4,8 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroumd"
+    android:background="@color/colorAccent"
     tools:context=".no_verification">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/noactivity_heading"
@@ -27,8 +34,10 @@
         android:hint="@string/otp_hint"
         android:inputType="number"
         android:maxLength="4"
+        android:textColorHint="#dfe6e9"
         app:layout_constraintTop_toBottomOf="@id/noactivity_heading"
-        android:layout_marginTop="25dp"/>
+        android:layout_marginTop="25dp"
+        />
 
     <TextView
         android:id="@+id/timer"
@@ -38,6 +47,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
+        android:textColor="#dfe6e9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/otp" />
@@ -47,19 +57,23 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/timer"
         android:text="@string/info_3"
-        android:textSize="12sp"
+        android:textSize="17sp"
         android:layout_margin="20dp"
         android:id="@+id/message_3"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:textColor="#dfe6e9"
+        android:textStyle="italic"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/message_3"
         android:text="@string/info_4"
-        android:textSize="12sp"
+        android:textSize="17sp"
         android:gravity="center_horizontal"
-        android:id="@+id/message_4"/>
+        android:id="@+id/message_4"
+        android:textColor="#dfe6e9"
+        android:textStyle="italic"/>
 
     <Button
         android:id="@+id/button"
@@ -71,8 +85,13 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="30dp"
         android:text="@string/ok"
+        android:textColor="#dfe6e9"
+        android:background="#0000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/message_4" />
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>

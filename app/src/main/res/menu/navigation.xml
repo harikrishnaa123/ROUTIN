@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_store"
+        android:icon="@drawable/ic_store_white_24dp"
+        android:title="@string/title_store" />
+
+    <item
+        android:id="@+id/navigation_delivery"
+        android:icon="@drawable/ic_card_giftcard_white_24dp"
+        android:title="@string/title_delivery" />
+
+    <item
+        android:id="@+id/navigation_plans"
+        android:icon="@drawable/ic_shopping_cart_white_24dp"
+        android:title="@string/title_plans" />
+
+    <item
+        android:id="@+id/navigation_myself"
+        android:icon="@drawable/ic_person_white_24dp"
+        android:title="@string/title_myself" />
+
+
+</menu>

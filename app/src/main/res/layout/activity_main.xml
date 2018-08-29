@@ -5,9 +5,16 @@
     style="Widget.AppCompat.Button.Borderless"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroumd"
+    android:background="@color/colorAccent"
     android:orientation="horizontal"
     tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/activity_heading"
@@ -21,16 +28,34 @@
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/routin1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_heading" />
+
 
     <TextView
         android:id="@+id/countrycode"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
         android:text="@string/country_code"
+        android:textColor="#dfe6e9"
         android:textSize="25sp"
-        app:layout_constraintTop_toBottomOf="@id/activity_heading" />
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/img2" />
 
 
     <EditText
@@ -41,6 +66,7 @@
         android:hint="@string/phno_hint"
         android:inputType="number"
         android:maxLength="10"
+        android:textColorHint="#dfe6e9"
         app:layout_constraintTop_toBottomOf="@id/countrycode" />
 
     <Button
@@ -50,29 +76,44 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="15dp"
         android:layout_marginRight="15dp"
+        android:background="#0000"
         android:text="@string/ok"
+        android:textColor="#dfe6e9"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/phno"
-        android:background="#0000"/>
+        app:layout_constraintTop_toBottomOf="@id/phno" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/ok_button"
-        android:text="@string/info"
-        android:textSize="15sp"
-        android:layout_margin="20dp"
         android:id="@+id/message_1"
-        android:gravity="center_horizontal"/>
-
-    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/message_1"
-        android:text="@string/info_2"
-        android:textSize="15sp"
+        android:layout_margin="20dp"
         android:gravity="center_horizontal"
-        android:id="@+id/message_2"/>
+        android:text="@string/info"
+        android:textColor="#dfe6e9"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/ok_button" />
+
+    <TextView
+        android:id="@+id/message_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/info_2"
+        android:textColor="#dfe6e9"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/message_1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+</android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
 
 
 </android.support.constraint.ConstraintLayout>
