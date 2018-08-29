@@ -5,10 +5,62 @@
     android:layout_height="match_parent"
     tools:context=".myself">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/title_myself" />
+        android:layout_height="wrap_content"
+        android:id="@+id/profile"
+        android:text="Proifle Information"
+        android:textColor="@color/colorAccent"
+        android:textStyle="italic"
+        android:textSize="25sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Delivery"
+        android:text="Delivery History and wallet"
+        android:textColor="@color/colorAccent"
+        android:textStyle="italic"
+        android:textSize="25sp"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="50dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/call"
+        android:text="Call Us"
+        android:textColor="@color/colorAccent"
+        android:textStyle="italic"
+        android:textSize="25sp"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="50dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/request"
+        android:text="Request Friend"
+        android:textColor="@color/colorAccent"
+        android:textStyle="italic"
+        android:textSize="25sp"
+        android:layout_marginTop="175dp"
+        android:layout_marginLeft="50dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rate"
+        android:text="Rate Us"
+        android:textColor="@color/colorAccent"
+        android:textStyle="italic"
+        android:textSize="25sp"
+        android:layout_marginTop="225dp"
+        android:layout_marginLeft="50dp"
+        />
+
+
 
 </FrameLayout>
