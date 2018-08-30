@@ -29,7 +29,6 @@
         <activity android:name=".grocery" />
         <activity android:name=".ice_creams" />
         <activity android:name=".meat" />
-        <activity android:name=".profile"></activity>
     </application>
 
 </manifest>
