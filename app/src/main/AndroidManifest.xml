@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/routine_icon"
+        android:icon="@mipmap/icon"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -22,6 +22,14 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".home" />
         <activity android:name=".datepicker" />
+        <activity android:name=".milkpro" />
+        <activity android:name=".empty_1" />
+        <activity android:name=".beverages" />
+        <activity android:name=".bakery" />
+        <activity android:name=".grocery" />
+        <activity android:name=".ice_creams" />
+        <activity android:name=".meat" />
+        <activity android:name=".profile"></activity>
     </application>
 
 </manifest>
